@@ -28,87 +28,84 @@ lush_and_bloom/
 │   ├── helpers.py           # CLI helper functions
 │   ├── models/
 │   │   ├── flower.py        # Flower model
-│   │   ├── customer.py      # Customer model
-│   │   └── order.py         # Order model
+│   │   ├── customer.py      #Order model
 │   ├── db/
 │   │   ├── models.py        # SQLAlchemy setup and Base
-│   │   └── seed.py          # Seed script
-│   ├── migrations/          # Alembic migration folder
+│   │   └── seed.py          #Seed script
+│   ├── migrations/          #Alembic migration folder
 │   └── freebies.db          # SQLite database
 │
-├── alembic.ini              # Alembic config
-├── Pipfile / Pipfile.lock   # Pipenv environment files
-└── README.md                # Project documentation
-```
+├── alembic.ini              #Project documentation
 
----
+
+
 
  How to Run the Project
 
-1. **Clone the repository**  
-   ```bash
+1. Clone the repository 
+   bash
    git clone https://github.com/ali-b-cell/Lush_and_Bloom_Flower_Shope.git
    cd Lush_and_Bloom_Flower_Shope/lush_and_bloom
-   ```
+   
 
-2. **Activate the virtual environment**  
-   ```bash
+2. Activate the virtual environment 
+   bash
    pipenv shell
-   ```
+   
 
-3. **Install dependencies**  
-   ```bash
+3. Install dependencies 
+   bash
    pipenv install
-   ```
+   
 
-4. **Run migrations and seed the database**  
-   ```bash
+4. Run migrations and seed the database 
+   bash
    alembic upgrade head
    python lib/db/seed.py
-   ```
+   
 
-5. **Start the CLI**  
-   ```bash
+5. Start the CLI 
+   bash
    python lib/cli.py
-   ```
+   
 
----
+
 
  User Experience
 
-- Navigate the CLI menu using numbers and text input
-- Real-time feedback for actions like adding/deleting flowers
-- Intuitive messages for invalid input and empty records
+Navigate the CLI menu using numbers and text input
+ Real-time feedback for actions like adding/deleting flowers
+Intuitive messages for invalid input and empty records
 
----
+
 
  Example Commands
 
-```bash
-# Start CLI
+bash
+ Start CLI
 python lib/cli.py
 
-# Re-seed the database
+ Re-seed the database
 python lib/db/seed.py
 
-# Apply database migrations
+Apply database migrations
 alembic upgrade head
-```
 
----
+
+
 
 Demo Video
 
- [Click here to watch the Loom demo](https://www.loom.com/) *(Replace with your Loom link)*
+ [Click here to watch the Loom demo](https://www.loom.com/share/999dce40d55f46fd9f52fd78efc0cb92) 
 
----
+
 
  Acknowledgments
 
-Created as a Phase 3 project at **Moringa School**.  
-Big thanks to the mentors, peers, and teaching assistants who supported this journey.
+Created as a Phase 3 project at Moringa School.  
+Big thanks to my mentor Joseph Mbugua, peers, and teaching assistants who supported this journey.
 
----
+
 
 License
 
