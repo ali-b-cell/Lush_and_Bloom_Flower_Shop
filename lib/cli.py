@@ -1,11 +1,10 @@
 from lib.models.base import Session
-from lib.models import Customer, Product, Order
+from lib import Flower, Customer, Order
 
-def main_menu():
-    session = Session()
-    print("\n Welcome to Lush & Bloom \n")
-    
-    session.close()
+session = Session()
 
-if __name__ == "__main__":
-    main_menu()
+customers = session.query(Customer).all()
+for c in customers:
+    print(c)
+
+session.close()
